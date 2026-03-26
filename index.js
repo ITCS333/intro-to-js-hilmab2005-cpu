@@ -20,13 +20,13 @@ function reverseString(str) {
  * @returns {number} The largest number in the array. Return null if the array is empty.
  */
 function findLargest(numbers) {
- if(numbers.length==0){
+if(numbers.length==0){
         return null;
     }
     let largest = numbers[0];
     for(let i = 1; i < numbers.length ; i++){
-        if(numbers.length[i]>largest){
-            largest=numbers.length[i];
+        if(numbers[i]>largest){
+            largest=numbers[i];
         }
     }
     return largest;
@@ -54,12 +54,13 @@ let lower =str.toLowerCase();
  * @returns {number[]} A new array containing only the even numbers from the original array.
  */
 function filterEvenNumbers(numbers) {
- let even=[];
-    for(let i=0; i<numbers[i];i++){
+let even=[];
+    for(let i=0; i<numbers.length;i++){
     if(numbers[i]%2==0){
         result.push(numbers[i]);
         }
     }
+    return even;
 }
 //
 
