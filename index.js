@@ -54,13 +54,8 @@ let lower =str.toLowerCase();
  * @returns {number[]} A new array containing only the even numbers from the original array.
  */
 function filterEvenNumbers(numbers) {
-let even=[];
-    for(let i=0; i<numbers.length;i++){
-    if(numbers[i]%2==0){
-        result.push(numbers[i]);
-        }
-    }
-    return even;
+  return numbers.filter(num => num % 2 === 0);
+}
 }
 //
 
